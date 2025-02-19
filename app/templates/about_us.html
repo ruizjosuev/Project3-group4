@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - EV Charging Stations Data App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #2C3E50;        /* Dark Blue for Navbar & Footer */
+      --secondary-color: #3498DB;      /* Light Blue for Header */
+      --secondary-color-deep: #2980B9;   /* Deep Blue for Header Gradient */
+      --accent-color: #F39C12;         /* Accent color for hover states */
+      --background-color: #f8f9fa;      /* Light grey background for body */
+    }
+    
+    body {
+      background-color: var(--background-color);
+    }
+    
+    /* Navbar Styling */
+    .navbar-custom {
+      background-color: var(--primary-color) !important;
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #fff !important;
+    }
+    .navbar-custom .nav-link:hover {
+      color: var(--accent-color) !important;
+    }
+    
+    /* Header Styling */
+    .header-custom {
+      background: linear-gradient(135deg, var(--secondary-color), var(--secondary-color-deep));
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    
+    /* Section Styling for About Us */
+    .section-custom {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+    
+    /* Footer Styling */
+    .footer-custom {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    
+    /* Team Member Card Styling */
+    .team-member {
+      margin-bottom: 2rem;
+    }
+    
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">EVCS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/map">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about_us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/works_cited">Works Cited</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <header class="header-custom">
+    <div class="container">
+      <h1>About Us</h1>
+      <p class="lead">
+        Our team of passionate data scientists is dedicated to building a reliable data app for EV charging stations.
+        With expertise in data analytics and visualization, we deliver accurate information on EV charging stations worldwide.
+      </p>
+    </div>
+  </header>
+  
+  <section class="container my-5 section-custom">
+    <div class="row text-center">
+      <div class="col-md-3 team-member">      
+        <h4>Willian Ruiz</h4>
+        <p>Data Scientist</p>
+        <a href="https://www.linkedin.com/in/willian-ruiz-94a23632a/" class="btn btn-outline-dark btn-sm">LinkedIn</a>
+        <a href="https://github.com/ruizjosuev" class="btn btn-outline-dark btn-sm">GitHub</a>
+
+      </div>
+      <div class="col-md-3 team-member">       
+        <h4>Ugur Cetin</h4>
+        <p>Data Scientist</p>
+        <a href= "https://www.linkedin.com/in/ugur-cetin-78825817"class="btn btn-outline-dark btn-sm">LinkedIn</a>
+        <a href="https://github.com/ugurctn" class="btn btn-outline-dark btn-sm">GitHub</a>
+      </div>
+      <div class="col-md-3 team-member">      
+        <h4>Luisa Murillo</h4>
+        <p>Data Scientist</p>
+        <a href="https://www.linkedin.com/in/luisa-murillo-16190a29b/" class="btn btn-outline-dark btn-sm">LinkedIn</a>
+        <a href="https://github.com/lumamuro" class="btn btn-outline-dark btn-sm">GitHub</a>
+      </div>
+      <div class="col-md-3 team-member">      
+        <h4>Thaissa Champagne</h4>
+        <p>Data Scientist</p>
+        <a href="" class="btn btn-outline-dark btn-sm">LinkedIn</a>
+        <a href="https://github.com/Drthais" class="btn btn-outline-dark btn-sm">GitHub</a>
+      </div>
+      <div class="col-md-3 team-member">       
+        <h4>Jason Johnson</h4>
+        <p>Data Scientist</p>
+        <a href="https://www.linkedin.com/in/jason-johnson-20b213a0/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-outline-dark btn-sm">LinkedIn</a>
+        <a href="https://github.com/DubJay4Life" class="btn btn-outline-dark btn-sm">GitHub</a>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer-custom">
+    <div class="container">
+      <p>&copy; 2025 EV Charging Stations Data App.</p>
+    </div>
+  </footer>
+</body>
+</html>
